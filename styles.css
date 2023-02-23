@@ -1,0 +1,65 @@
+/* The location of the card as well as the fonts being used across */
+body 
+{
+    margin: 100px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* The mastermind behind it all */
+.avatar
+{
+    width: 150px;
+    border-radius: 10px;
+    border: solid 3px;
+}
+
+/* When hovering over the image will show the teacher themselves */
+.avatarhover:hover
+{
+    opacity: 0;
+}
+
+/* Image is too large to fit on top of other image so had to be positions inside object */
+.avatarhover
+{
+    width: 150px;
+    border-radius: 10px;
+    border: solid 3px;
+    position: absolute;
+    height: 150px;
+    left: 45px; 
+    object-fit: cover;
+    object-position: 100% 25%;
+}
+
+/* Card attributes itself such as position, color, and text */
+.card 
+{
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    background: #e8998d;
+    color: #2F4858;
+    border-bottom: 6px solid #BA1F33;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+}
+
+/* when hovering card bottom border will produce rainbow effect */
+.card:hover
+{
+    animation-name: example;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+}
+/* animation itself */
+@keyframes example 
+{
+  10%   {border-bottom: red solid 6px;}
+  25%  {border-bottom: yellow solid 6px;}
+  50%  {border-bottom: blue solid 6px;}
+  100% {border-bottom: green solix 6px;}
+}
